@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mxbyuit3f-go-gitops
+  description: This is GitOps manifest for mxbyuit3f-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=mxbyuit3f-go
+    backstage.io/kubernetes-id: mxbyuit3f-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: mxbyuit3f-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:mxbyuit3f-go

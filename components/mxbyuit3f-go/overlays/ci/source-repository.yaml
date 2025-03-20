@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: mxbyuit3f-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/mxbyuit3f-go
